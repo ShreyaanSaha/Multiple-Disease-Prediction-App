@@ -9,22 +9,13 @@ import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
 
-st.markdown("""
-    <style>
-    .reportview-container {
-        background: #004744
-    }
-    </style>
-    """, unsafe_allow_html=True)
-
-
 # loading the saved models
 
-diabetes_model = pickle.load(open('C:/Users/SHREYAAN/Desktop/Data Science Projects/Multiple Disease Pred/Models/diabetes_model.sav', 'rb'))
+diabetes_model = pickle.load(open('diabetes_model.sav', 'rb'))
 
-heart_disease_model = pickle.load(open('C:/Users/SHREYAAN/Desktop/Data Science Projects/Multiple Disease Pred/Models/heart_disease_model.sav','rb'))
+heart_disease_model = pickle.load(open('heart_disease_model.sav', 'rb'))
 
-parkinsons_model = pickle.load(open('C:/Users/SHREYAAN/Desktop/Data Science Projects/Multiple Disease Pred/Models/parkinsons_model.sav', 'rb'))
+parkinsons_model = pickle.load(open('parkinsons_model.sav', 'rb'))
 
 
 
